@@ -4,32 +4,58 @@
         <title> Dean Kelly </title>
 
         <style>
-            div.menu {
+            ul {
                 list-style-type: none;
-                padding: 10px;
-                width: 7.5cm;
-                height: 100%;
                 margin: 0;
-                border: 0;
-                background-color: rgb(173,185,202);
+                padding: 0;
                 overflow: hidden;
+                background-color: rgb(158, 158, 158);
+                position: fixed;
+                top: 0;
+                width: 100%;
             }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: rgb(68, 68, 68);
+            }
+            .active {
+                background-color: #f18a4e;
+            }
+
+            h1 {
+                padding-top: 50px
+            }
+
         </style>
 
     </head>
     <body>
-        <div>
-            <div class = "Menu">
-                <ul>
-                    <li>Home</li>
-                    <li>About Me</li>
-                    <li>Projects Showcase</li>
-                    <li>Contact Me</li>
-                </ul>
-            </div>
-            <div class = "Body">
-                <h1>Welcome To My Webpage</h1>
-            </div>
+        <div id="header">
+            <ul>
+                <li><a class="active" href="main.html">Home</a></li>
+                <li> <a href="AboutMe.html">About Me</a></li>
+                <li> <a href="WorkShowcase.html"> Work Showcase </a></li>
+                <li> <a href="ContactMe.html">Contact Me </a></li>
+            </ul>
         </div>
+        <div id="main">
+            <h1>Welcome To My Website!</h1>
+            <p>Its pretty cool</p>
+        </div>
+        <div id = "Footer">
+            <img src="ImageElements/GitHub-Mark-64px.png">
+            <img src="">
+
+        </div>
+
     </body> 
 </html>
