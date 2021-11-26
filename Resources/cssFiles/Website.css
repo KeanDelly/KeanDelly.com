@@ -1,0 +1,127 @@
+  /*Adjusts the margin of the 'body' to allow content to go from side to side*/
+  body {
+    margin: 0;
+  }
+  /*The Styling for the header, denoted with class=header*/
+  body h1.header {
+        font-family: Arial;
+        font-size: 40;
+        font-style: bold;
+        background-color: #FFB347;
+        text-align: left;
+        padding: 15px;
+        border:0px;
+        margin:0px;
+    }
+  /*Styling for the Top Nav Bar*/
+  .topnav{
+    background-color:#FFB347;
+  }
+  .topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#FFB347;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+
+  .topnav li {
+    float: left;
+  }  
+
+  .topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .topnav ul.menu li a:hover{
+    background-color: #FFB347;
+  }
+
+  /*Styling for Columns*/
+  /*Styling for main column*/
+  .column{
+      width:65%;
+      float:left;
+  }
+  .column-full{
+      float:left;
+  }
+  .column-right{
+      width:35%;
+      float:left;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+  content: "";
+  display: table; 
+  clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .column, .column-right {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /*Styling for section boxes*/
+  .card{
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px;
+    border-color: #f8b878;
+  }
+
+  .contactCard{
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .contactCard div{
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .contactCard h2{
+    background-color: #aaa;
+    padding: 3px;
+    border: 5px;
+    border-color: #f8b878;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    /* negative value of footer height */
+    height: 40px;
+    background-color:#f8b878;
+  }
+
+  .homeSlides{
+    display:none;
+  }
+
