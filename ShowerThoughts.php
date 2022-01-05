@@ -5,18 +5,17 @@
         <link rel="stylesheet" href="Resources/cssFiles/Website.css">
     </head>
     <body>
-        <div class = "row">
+        <nav class = "topnav">
             <h1 class = header><b><u>Dean Kelly</u></b></h1>
-            <div class = "topnav">
-              <ul class = "menu">
+            <ul class = "menu">
                 <li><a href ="Home.html">Home</a></li>
                 <li><a href="AboutMe.html">About Me</a></li>
                 <li><a href="Showcase.html">Work Showcase</a></li>
                 <li><a href="ShowerThoughts.html">Shower Thoughts</a></li>
                 <li><a href="ContactMe.html">Contact Me</a></li>
-              </ul>
-            </div>
-        </div>
+            </ul>
+      </nav> 
+      
             <div class = "row">
                 <div>
                     
