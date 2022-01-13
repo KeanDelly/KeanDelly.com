@@ -47,6 +47,7 @@
   /*Styling for the Top Nav Bar*/
   .topnav{
     background-color:#FFB347;
+    width:100%;
   }
   .topnav ul {
     list-style-type: none;
