@@ -6,24 +6,48 @@
     </head>
 
     <body>
-      <div class = "row">
+      <nav class = "topnav">
         <h1 class = header><b><u>Dean Kelly</u></b></h1>
-        <div class = "topnav">
-          <ul class = "menu">
-            <li><a href ="Home.html">Home</a></li>
-            <li><a href="AboutMe.html">About Me</a></li>
-            <li><a href="Showcase.html">Work Showcase</a></li>
-            <li><a href="ShowerThoughts.html">Shower Thoughts</a></li>
-            <li><a href="ContactMe.html">Contact Me</a></li>
-          </ul>
-        </div>
-      </div>  
-      <div>
+        <ul class = "menu">
+          <li><a href ="Home.html">Home</a></li>
+          <li><a href="AboutMe.html">About Me</a></li>
+          <li class = "active"><a href="Showcase.html">Work Showcase</a></li>
+          <li><a href="ShowerThoughts.html">Shower Thoughts</a></li>
+          <li><a href="ContactMe.html">Contact Me</a></li>
+        </ul>
+      </nav> 
 
-      </div>
-      <div class=footer>
-        <p></p>
-      </div>
+      <main class = "showcaseGrid">
+        <article class = "card">  
+          <h2>Huffman Encoding</h2>
+          <p>
+            Arguably, this is the piece of work I'm most proud of. The project consisted of the conception
+            and development of a text compression algorithm, alongside a corresponding literature review of both 
+            compression algorithms in general and an analysis of the application created. It involved research,
+            an iterative approach to optimisation, and performance analysis.  
+          </p>
+        </article>
+        <article class = "card">
+          <h2>Covid Booking App</h2>
+          <p>
+            This project was the first object oriented application i completed in Java. The purpose of the coursework was 
+            to create a test booking system for a university that was aiding the NHS in conducting Track and trace testing. 
+          </p>
+        </article>
+        <article class = "card">
+          <h2>PebbleGame</h2>
+          <p>
+            This is one of my most recent pieces of work, and is a demonstration of an ability to work using 
+            paired programming. The premise of the coursework was to apply threading to handle multiple elements of a 
+            game involving pebbles. Overall, each 'player' in the game is represented by a thread, and those threads had to
+            be handled in a way that players turn alternated. 
+          </p>
+        </article>
+      </main>
+
+      <footer class = "footer">
+        <p>&copy Dean Kelly 2022</p>
+      </footer>
     </body>
 
     </html>

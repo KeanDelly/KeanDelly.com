@@ -11,10 +11,10 @@
 
     <body>
       <!-- Navigation Bar -->
-      <h1 class = header><b><u>Dean Kelly</u></b></h1>
       <nav class = "topnav">
+        <h1 class = header><b><u>Dean Kelly</u></b></h1>
         <ul class = "menu">
-          <li><a href ="Home.html">Home</a></li>
+          <li class = "active"><a href ="Home.html">Home</a></li>
           <li><a href="AboutMe.html">About Me</a></li>
           <li><a href="Showcase.html">Work Showcase</a></li>
           <li><a href="ShowerThoughts.html">Shower Thoughts</a></li>
@@ -24,37 +24,19 @@
 
       <main>
         <section>
-          <!-- Home Page Slide Show-->
-          <img class = "homeSlides" src ="Resources/ImgHome.jpg" alt = "img_not_found" style="width:100%">
-          <img class = "homeSlides" src ="Resources/ImgHome.jpg" alt = "img_not_found" style="width:100%">
-          <img class = "homeSlides" src ="Resources/ImgHome.jpg" alt = "img_not_found" style="width:100%">
-          <img class = "homeSlides" src ="Resources/ImgHome.jpg" alt = "img_not_found" style="width:100%">
-          <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
-          <button class="display-right" onclick="plusDivs(+1)">&#10095;</button>
+          <article class = "welcomeCard">
+            <h2>Welcome to My Corner of the Internet!</h2>
+            <p>It's brill to have you be able to view my website. It's something which is mostly
+              inspired by my own prefrence, such as the orange colour scheme. Over time I'm hoping this will grow to reflect
+              my aptitude and passion in the world of Computer Science, and my growth within the field over time aswell. I realise the 
+              site isn't much to look at yet, but it's certainly a start.
+            </p>
+          </article>
         </section>
-        <script>
-          var slideIndex = 1;
-          showDivs(slideIndex);
-  
-          function plusDivs(n) {
-            showDivs(slideIndex += n);
-          }
-  
-          function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = x.length} ;
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";
-            }
-            x[slideIndex-1].style.display = "block";
-          }
-        </script>
       </main>
 
-      <footer>
-        <p></p>
+      <footer class = "footer">
+        <p>&copy Dean Kelly 2022</p>
       </footer>
     
     </body>
