@@ -1,14 +1,45 @@
+  /*Set colour variables for site
+  --main-background: #FFB347;
+  --footer-colour: #ff9729;
+  --nav-active-colour: #FFC471;
+  */
+  
   /*Adjusts the margin of the 'body' to allow content to go from side to side*/
   body {
+    background-color: #FFB347;
+    min-height: 100vh;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+  main{
+    flex: 1;
+  }
+  /*Sttyling for welcome button*/
+  .welcomeButton{
+    transition-duration: .4s ;
+    background-color: #ff9729;
+    border:none;
+    text-decoration-color: black;
+    text-align: center;
+    border-radius: 20px;
+    width:100px;
+    height: 50px;
+    display: inline-block;
+  }
+  .welcomeButton:hover{
+    background-color: #FFC471;
+  }
+
   /*The Styling for the header, denoted with class=header*/
-  body h1.header {
+  body .header {
         font-family: Arial;
         font-size: 40;
-        font-style: bold;
         background-color: #FFB347;
-        text-align: left;
+        text-align: center;
         padding: 15px;
         border:0px;
         margin:0px;
@@ -16,6 +47,7 @@
   /*Styling for the Top Nav Bar*/
   .topnav{
     background-color:#FFB347;
+    width:100%;
   }
   .topnav ul {
     list-style-type: none;
@@ -23,14 +55,19 @@
     padding: 0;
     overflow: hidden;
     background-color:#FFB347;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
     top: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .topnav li {
     float: left;
+    border-radius: 20px;
   }  
+
+  .topnav .active{
+    background-color: #FFC471;
+  }
 
   .topnav li a {
     display: block;
@@ -39,7 +76,7 @@
     padding: 14px 16px;
     text-decoration: none;
   }
-  .topnav ul.menu li a:hover{
+  .topnav .menu li a:hover{
     background-color: #FFB347;
   }
 
@@ -79,49 +116,64 @@
     }
   }
 
-  /* Fake image */
-  .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-  }
 
   /*Styling for section boxes*/
   .card{
-    background-color: white;
+    background-color: #FFC471;
     padding: 10px;
-    margin-top: 10px;
-    border: 2px;
-    border-color: #f8b878;
+    margin: 20px;
+    border-radius: 30px;
   }
 
-  .contactCard{
-    background-color: white;
-    padding: 10px;
-    margin-top: 10px;
-  }
-  .contactCard div{
-    background-color: white;
-    padding: 10px;
-    margin-top: 10px;
+  .card h2{
+    text-decoration: underline;
   }
 
-  .contactCard h2{
-    background-color: #aaa;
-    padding: 3px;
-    border: 5px;
-    border-color: #f8b878;
+  /*Styling for welcome page card*/
+  .welcomeCard{
+    background-color: #FFC471;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 30px;
+    align-items: center;
+  }
+  .welcomeCard h2{
+    text-decoration: underline;
+    text-align: center;
+  }
+  .welcomeCard p{
+    text-align: center;
+
+  }
+
+  /*DEscription of the grid layout for the Work Showcase*/
+  .showcaseGrid{
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 400px;
+    align-items:stretch;
+    place-items: center;
+  }
+
+  .showcaseGrid .date{
+    text-align: right;
+
+  }
+
+  /*Styling for Shower Thoughts page*/
+  .showerGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    align-items:stretch;
+    place-items: center;
   }
 
   .footer {
-    position: absolute;
-    bottom: 0;
-    /* negative value of footer height */
-    height: 40px;
-    background-color:#f8b878;
+    margin-top: auto;
+    text-align: center;
+    width:100%;
+    background-color:#ff9729;
   }
 
-  .homeSlides{
-    display:none;
-  }
 
