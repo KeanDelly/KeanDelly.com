@@ -9,13 +9,14 @@
             <title>My Silly Site - Test Post Please Ignore</title>
             <description>
                 <![CDATA[
-                    Realistically this is somewhat of a ceremonial post, just to have a starting point and a crack at
-                    RSS. Heck, it's even being done manually, old school, CI, CD, Pipelines, just good ol'fashioned
-                    Keyboards and monitor. Hopefully the formatting doesn't come out too horribly, but it can always be
-                    improved.
+                    <p>
+                    Realistically this is somewhat of a ceremonial post, just to have a starting point and a crack at RSS.
+                    Heck, it's even being done manually, old school, CI, CD, Pipelines, just good ol'fashioned Keyboards and monitor.
+                    Hopefully the formatting doesn't come out too horribly, but it can always be improved.
 
                     I could here, talk about my reasoning's for doing this and such, but ultimately the only way to find
                     this feed will be to have seen the accompanying post anyway, so will leave it as short and Sweet.
+                    </p>
                 ]]>
             </description>
             <link>https://keandelly.com/</link>
