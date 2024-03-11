@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Kean's Creations</title>
+        <description>New or just updated Projects on my website</description>
+        <link>https://keandelly.com</link>
+        <lastBuildDate>Mon, 11 Mar 2024 22:00:00 GMT</lastBuildDate>
+        <item>
+            <title>My Silly Site - Test Post Please Ignore</title>
+            <description>
+                <![CDATA[
+                    Realistically this is somewhat of a ceremonial post, just to have a starting point and a crack at
+                    RSS. Heck, it's even being done manually, old school, CI, CD, Pipelines, just good ol'fashioned
+                    Keyboards and monitor. Hopefully the formatting doesn't come out too horribly, but it can always be
+                    improved.
+
+                    I could here, talk about my reasoning's for doing this and such, but ultimately the only way to find
+                    this feed will be to have seen the accompanying post anyway, so will leave it as short and Sweet.
+                ]]>
+            </description>
+            <link>https://keandelly.com/</link>
+            <pubDate>Wed, 09 Mar 2024 12:00:00 GMT</pubDate>
+        </item>
+        <!-- Add more items for other projects or findings -->
+    </channel>
+</rss>
