@@ -125,9 +125,11 @@
     margin: 20px;
     border-radius: 30px;
   }
-
   .card h2{
     text-decoration: underline;
+  }
+  .card p{
+    text-align: left;
   }
 
   /*Styling for welcome page card*/
@@ -145,6 +147,29 @@
   .welcomeCard p{
     text-align: center;
 
+  }
+
+  .bigCard{
+    background-color: #FFC471;
+    border: 3px solid #FFC471;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 30px;
+    align-items: center;
+  }
+  .bigCard:hover{
+    border: 3px solid black;
+  }
+  .bigCard h2{
+    text-decoration: underline;
+    text-align: left;
+  }
+  .bigCard p{
+    text-align: left;
+  }
+  .bigCard a{
+    text-decoration: none;
+    color: black;
   }
 
   /*DEscription of the grid layout for the Work Showcase*/
@@ -176,5 +201,33 @@
     width:100%;
     background-color:#ff9729;
   }
+
+  .two-column-list {
+    width: 100%; /* Set the width of the container */
+  }
+
+  .two-column-list li {
+    float: left;
+    width: 50%; /* Set the width of each list item */
+  }
+
+  .three-column-list {
+    width: 100%; /* Set the width of the container */
+  }
+
+  .three-column-list li {
+    float: left;
+    width: 33.33%; /* Set the width of each list item */
+  }
+
+  .four-column-list {
+    width: 100%; /* Set the width of the container */
+  }
+
+  .four-column-list li {
+    float: left;
+    width: 25%; /* Set the width of each list item */
+  }
+
 
 
