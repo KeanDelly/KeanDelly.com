@@ -19,6 +19,12 @@
     flex: 1;
     width: 60%;
   }
+  @media only screen and (max-width: 768px) {
+    main {
+      flex: 1;
+      width: 95%;
+    }
+  }
   /*Styling for welcome button*/
   .welcomeButton{
     transition-duration: .4s ;
@@ -227,6 +233,10 @@
   .four-column-list li {
     float: left;
     width: 25%; /* Set the width of each list item */
+  }
+
+  .projectNav {
+
   }
 
 
