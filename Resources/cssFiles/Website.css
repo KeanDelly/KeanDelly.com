@@ -51,6 +51,9 @@
         border:0;
         margin:0;
     }
+
+
+
   /*Styling for the Top Nav Bar*/
   .topnav{
     background-color:#FFB347;
@@ -66,9 +69,14 @@
     display: flex;
     justify-content: center;
   }
-
+  @media (max-width: 768px) {
+    .topnav ul {
+      flex-wrap: wrap;
+      justify-content: center ; /* Remove any horizontal justification */
+    }
+  }
   .topnav li {
-    float: left;
+    /*float: left;*/
     border-radius: 20px;
   }  
 
@@ -86,6 +94,8 @@
   .topnav .menu li a:hover{
     background-color: #FFB347;
   }
+
+
 
   /*Styling for Columns*/
   /*Styling for main column*/
