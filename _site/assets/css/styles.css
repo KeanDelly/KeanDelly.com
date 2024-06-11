@@ -1,5 +1,254 @@
-.current {
-  color: green;
+/*Set colour variables for site
+--main-background: #FFB347;
+--footer-colour: #ff9729;
+--nav-active-colour: #FFC471;
+*/
+/*Adjusts the margin of the 'body' to allow content to go from side to side*/
+body {
+  background-color: #FFB347;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  flex: 1;
+  width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    flex: 1;
+    width: 95%;
+  }
+}
+/*Styling for welcome button*/
+.welcomeButton {
+  transition-duration: 0.4s;
+  background-color: #ff9729;
+  border: none;
+  text-decoration-color: black;
+  text-align: center;
+  border-radius: 20px;
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+}
+
+.welcomeButton:hover {
+  background-color: #FFC471;
+}
+
+/*The Styling for the banner, denoted with class=banner*/
+body .banner {
+  font-family: Arial;
+  font-size: 40;
+  background-color: #FFB347;
+  text-align: center;
+  padding: 15px;
+  border: 0;
+  margin: 0;
+}
+
+/*Styling for the Top Nav Bar*/
+.topnav {
+  background-color: #FFB347;
+  width: 100%;
+}
+
+.topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFB347;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .topnav ul {
+    flex-wrap: wrap;
+    justify-content: center; /* Remove any horizontal justification */
+  }
+}
+.topnav li {
+  /*float: left;*/
+  border-radius: 20px;
+}
+
+.topnav .active {
+  background-color: #FFC471;
+}
+
+.topnav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav .menu li a:hover {
+  background-color: #FFB347;
+}
+
+/*Styling for Columns*/
+/*Styling for main column*/
+.column {
+  width: 65%;
+  float: left;
+}
+
+.column-full {
+  float: left;
+}
+
+.column-right {
+  width: 35%;
+  float: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column, .column-right {
+    width: 100%;
+    padding: 0;
+  }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+/*Styling for section boxes*/
+.card {
+  background-color: #FFC471;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 30px;
+}
+
+.card h2 {
+  text-decoration: underline;
+}
+
+.card p {
+  text-align: left;
+}
+
+/*Styling for welcome page card*/
+.welcomeCard {
+  background-color: #FFC471;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.welcomeCard h2 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.welcomeCard p {
+  text-align: center;
+}
+
+.bigCard {
+  background-color: #FFC471;
+  border: 3px solid #FFC471;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.bigCard:hover {
+  border: 3px solid black;
+}
+
+.bigCard h2 {
+  text-decoration: underline;
+  text-align: left;
+}
+
+.bigCard p {
+  text-align: left;
+}
+
+.bigCard a {
+  text-decoration: none;
+  color: black;
+}
+
+/*DEscription of the grid layout for the Work Showcase*/
+.showcaseGrid {
+  display: grid;
+  grid-template-columns: 1fr 500px 1fr;
+  grid-template-rows: 400px;
+  align-items: stretch;
+  place-items: center;
+}
+
+.showcaseGrid .date {
+  text-align: right;
+}
+
+/*Styling for Shower Thoughts page*/
+.showerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px;
+  align-items: stretch;
+  place-items: center;
+}
+
+.footer {
+  margin-top: auto;
+  text-align: center;
+  width: 100%;
+  background-color: #ff9729;
+}
+
+.two-column-list {
+  width: 100%; /* Set the width of the container */
+}
+
+.two-column-list li {
+  float: left;
+  width: 50%; /* Set the width of each list item */
+}
+
+.three-column-list {
+  width: 100%; /* Set the width of the container */
+}
+
+.three-column-list li {
+  float: left;
+  width: 33.33%; /* Set the width of each list item */
+}
+
+.four-column-list {
+  width: 100%; /* Set the width of the container */
+}
+
+.four-column-list li {
+  float: left;
+  width: 25%; /* Set the width of each list item */
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,15 @@
+<html lang="en">
+    <head>
+        <title>
+            {{ page.title }}
+        </title>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+    </head>
+    <body>
+	  <header>
+	    {% include banner.html %}
+      </header>
+        {{ content }} 
+		{% include footer.html %}
+    </body>
+</html>

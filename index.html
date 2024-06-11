@@ -1,6 +1,14 @@
 ---
 # front matter tells Jekyll to process Liquid
-layout: default
-title: Home
+title: Welcome
+layout: landing
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+<article class = "welcomeCard">
+  <p>The Development of this site is an ongoing continuous process that I have just begun.</p>
+  <p>Think of it as a very early access thing, like almost every games company seem to be doing</p>
+  <p>The site is best viewed on a computer, since adaptations for mobile devices are yet to be added</p>
+  <p>Please follow this link to reach the home page</p>
+</article> 
+<form action = home.html>
+  <button class = "welcomeButton" type = "submit"> Enter! </button>
+</form> 
