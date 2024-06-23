@@ -1,14 +1,8 @@
 - name: Home
-  link: /home.html
-- name: Tutoring
-  link: /tutoring.html
-- name: Blog
-  link: /blog.html
-- name: Staff
-  link: /staff.html
-- name: Shower Thoughts
-  link: /shower_thoughts.html
-- name: Links
-  link: links.html
+  link: /index.html
+- name: Projects
+  link: /projects.html
 - name: Contact Me
   link: /contact_me.html
+- name: Random
+  link: /random.html

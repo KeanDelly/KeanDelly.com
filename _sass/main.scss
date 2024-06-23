@@ -92,7 +92,8 @@
     text-decoration: none;
   }
   .topnav .menu li a:hover{
-    background-color: #FFB347;
+    background-color: #FFC471;
+    border-radius: 20px;
   }
 
 
@@ -173,19 +174,12 @@
     border-radius: 30px;
     align-items: center;
   }
-  .bigCard:hover{
-    border: 3px solid black;
-  }
   .bigCard h2{
     text-decoration: underline;
     text-align: left;
   }
   .bigCard p{
     text-align: left;
-  }
-  .bigCard a{
-    text-decoration: none;
-    color: black;
   }
 
   /*DEscription of the grid layout for the Work Showcase*/
@@ -243,8 +237,4 @@
   .four-column-list li {
     float: left;
     width: 25%; /* Set the width of each list item */
-  }
-
-  .projectNav {
-
   }
