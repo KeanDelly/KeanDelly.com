@@ -1,0 +1,23 @@
+---
+title: Projects
+layout: default
+---
+<section class = "welcomeCard">
+  <h2>My Projects</h2>
+  <p>
+    You'll find the vast majority of projects I've worked on below, from both before and during university
+  </p>
+</section>
+
+{% assign projects_by_year = site.projects | group_by: "year" | sort: "title" %}
+  {% for year in projects_by_year %}
+  <section class = "bigCard">
+    <h2>{{ year.name }}</h2>
+      {% for project in year.items %}
+      <article>
+        <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+        <p>{{ project.excerpt }}</p>
+      </article>
+      {% endfor %}
+  </section>
+{% endfor %}
