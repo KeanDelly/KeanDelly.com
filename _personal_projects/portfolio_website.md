@@ -2,47 +2,25 @@
 layout: "project"
 title: "Portfolio Website"
 year: 2024
-technologies: [HTML, CSS, Jekyll, RSS, Github Pages]
+technologies: [HTML, CSS, Ruby, Jekyll, RSS, Github Pages]
+blurb: "This very website, powered by Jekyll and Github Pages it serves as a portfolio of my work."
 ---          
-
-This Website, powered by Jekyll and Github Pages it serves as a portfolio of my work.
 
 ## Background
 
-Back in 2022, around March-time, I was looking for an Industrial Placement role. Having made a quite large number of applications
-I thought to use the advice of most random computer Scientists on the Internet. Build a website. Having done a single module about web development
-in my first year of University I thought it was a piece of cake. By the end of the day I had a basic template (The one still being used now),
-a small amount of content, and some links to my project.
+This Portfolio website is quite a long time in the making. It was started in 2022 whilst I was looking for an Industrial PLacement experiance, with the goal of impressing employers with a portfolio of my work. After doing an initial landing page and moving onto the actual projects section, I soon realised that it was serving no purpose other then being a more awkward way to link to Github Repositories. 
 
-After all of this something became very clear. The website had just become a tedious way of linking to GitHub Projects individually, and it
-would be much more efficient to just link my GitHub to my CV. So on the basis it was probably negatively impacting my CV anyway, it was replaced
-with a straight link to GitHub. At this point a whole 2 weeks after its creation, the project was effectively abandoned. In fact this was done so
-quickly it was left hosting a "Website under construction" page to the odd hacker that came around.
+Now in 2024, having graduated university, I wanted to revisit the project. I wanted to create a professional looking site that showcased my work. This time a proper development approach would be taken, starting with the design and layout of the website, with the content of the site to follow. By doing so, it would also allow me to reflect on the projects created at university and during my spare time, thinking about the skills I've learned. 
 
-Fun Fact: It did actually get hacked too. I'm unsure as to how but around a year ago I remembered the sites existence to
-find someone else's page in its place (Bringing great joy to my colleagues). I won't list the hosting platform here, purely
-from lack of knowledge as to how it actually occurred.
-            
-## Motivations 
+## Development Overview
 
-This brings us to the modern day, March 2024. With a Dissertation due in two months, taking a bit of time out to build up a website seems
-a bit counter-productive. But I think its proving a nice break from "Death by Algebra". My reasoning for coming back to the site is quite simple really,
-"Practise what you preach". Without a rant, essentially I wanted to create a home for my projects to exist that wasn't just a portfolio or any attempt
-at an attention grab. It can help motivate some effort into some projects, showcase the works I have done, and hopefully people who come across it
-might take some inspiration, you never know.
+The development of the site has mostly followed a waterfall like approach. First a pen and paper sketch of the page alyouts was made, and colors selected for the site. I then looked into the technologies that could make the development of the site much easier. Things such as hosting providers and site creation tools. 
 
-## I am not a Front-End Developer
+Being a free platform that i counsider quite trustworthy, I decided to use Github Pages as a hosting platform. This indirectly influened the selection of site creation tool. Remembering the pains of managing large numbers of links across even a small number of pages, I wanted to find a tool that made site management easier, but also allow the creation of the site in pure code form. Being supported by Github Pages, Jekyll seemed ideal as it fit all the above criteria. 
 
-I have never been shy about a very simple fact. I don't enjoy front-end development. It can be quite tedious to do, quite time-consuming without much experience,
-and I'm not a graphic designer. That being said I also didn't want the site to look entirely out of the 1990s, so I've tried my best. At the end of the day it is supposed
-to be a bit personal, hence the orange color scheme purely as a fact of it being my favourite color. If you spot anything that doesn't line up properly
-feel free to reach out, or add an issue to the GitHub or however that works, and throw in a solution if you're feeling it.
+The base of the site was created, powered by Jekyll. A default template for all pages was made, alongside the creation of a collection for projects, to allow the auto-generation of the Projects pages. The design of the page did vary slightly from its origninal drawings, but mostly small aesthetic changes, such as a white instead of clementine background. 
 
-## The Development Process
-
-Since the initial conception, a lot of the development process has been forgotten. But what I can say is that the Site is hosted using GitHub Pages.
-The vast majority of the site is based on things I have seen and liked, or my own ideas. I have not used any Large-Language Models to aid the creation
-of the site. There was an attempt to work on the CSS using one of the popular LLM's, but the outcome wasn't really that great. So back to good ol' fasioned google and stack Overflow.
+Once I was happy with the layout, aswell as getting a bit bored with graphic design. I began to fill out the content. The Projects collection came in really handy, since it meant the majority of pages could be written in simple markdown, and the pages automatically generated. 
 
 ## Technologies Used
 
@@ -50,16 +28,15 @@ Without too much detail, the technologies used for this project are:
 
 * HTML
 * CSS
-* Javascript
-* PHP -> Since Removed
-* Git -> Using GitHub as a Store
-* GitHub Pages -> For Hosting
-* RSS -> For People who might want to keep up to date
+* Ruby
+* Jeyll
+* GitHub Repo & Pages
+* RSS
+
+## Lessons Learned
+The biggest lessons learned on this project were how to use Ruby, Ruby Gems and the importance of being able to debug command line errors. 
 
 
 ## Future Developments
 
-As someone who tends to work using an iterative process the exact future developments are unknown. Most likely they will involve
-fleshing out the site, such as Past Projects, Contact Details, etc. And Ultimately some form of overhaul if it ever gets too big,
-or I finally decided to give my graphic design career a second-glance.
-            
+Having added the majority of previous work to the site, I am happy with the look and content of the site. As such I dont think there is a current need to develop the site further. This will allow me to work on new projects using the skills and abilities reflected upon in the sites creation. As such, updates will continue with the addition of new work, or ammendments to prior work.
