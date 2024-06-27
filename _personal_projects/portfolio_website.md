@@ -2,9 +2,10 @@
 layout: "project"
 title: "Portfolio Website"
 year: 2024
-month: "August"
-excerpt: "Started in 2022, this website project was to showcase my work to prospective employers, and coincided with my search for an Industrial Placement year. The result of this, it's only in my fourth year that I am completing the thing, with a much stronger idea about what it should be."
+technologies: [HTML, CSS, Jekyll, RSS, Github Pages]
 ---          
+
+This Website, powered by Jekyll and Github Pages it serves as a portfolio of my work.
 
 ## Background
 

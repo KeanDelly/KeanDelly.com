@@ -1,23 +1,54 @@
 ---
-title: Projects
 layout: default
+title: Projects
 ---
-<section class = "welcomeCard">
-  <h2>My Projects</h2>
-  <p>
-    You'll find the vast majority of projects I've worked on below, from both before and during university
-  </p>
-</section>
 
-{% assign projects_by_year = site.projects | group_by: "year" | sort: "title" %}
-  {% for year in projects_by_year %}
-  <section class = "bigCard">
-    <h2>{{ year.name }}</h2>
-      {% for project in year.items %}
-      <article>
-        <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
-        <p>{{ project.excerpt }}</p>
-      </article>
-      {% endfor %}
-  </section>
+<h1>My Projects</h1>
+
+<p>Welcome to my projects page. Here you'll find a collection of my work, separated into university and personal projects, and organized by year.</p>
+
+<h2>Personal Projects</h2>
+
+{% assign sorted_personal_projects = site.personal_projects | sort: "year" | reverse %}
+{% assign personal_years = sorted_personal_projects | map: "year" | uniq %}
+
+{% for year in personal_years %}
+  <h3>{{ year }}</h3>
+  <div class="project-grid">
+    {% for project in sorted_personal_projects %}
+      {% if project.year == year %}
+        <div class="project-card">
+          <div class="content-bubble">
+            <h4>{{ project.title }}</h4>
+            <p class="project-extract">{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
+            <p class="technologies"><strong>Technologies:</strong> {{ project.technologies | join: ", " }}</p>
+            <a href="{{ project.url }}">Read more</a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endfor %}
+
+<h2>University Projects</h2>
+
+{% assign sorted_uni_projects = site.university_projects | sort: "year" | reverse %}
+{% assign uni_years = sorted_uni_projects | map: "year" | uniq %}
+
+{% for year in uni_years %}
+  <h3>{{ year }}</h3>
+  <div class="project-grid">
+    {% for project in sorted_uni_projects %}
+      {% if project.year == year %}
+        <div class="project-card">
+          <div class="content-bubble">
+            <h4>{{ project.title }}</h4>
+            <p class="project-extract">{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
+            <p class="technologies"><strong>Technologies:</strong> {{ project.technologies | join: ", " }}</p>
+            <a href="{{ project.url }}">Read more</a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
 {% endfor %}

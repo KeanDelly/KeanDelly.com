@@ -1,246 +1,206 @@
-/*Set colour variables for site
---main-background: #FFB347;
---footer-colour: #ff9729;
---nav-active-colour: #FFC471;
-*/
-/*Adjusts the margin of the 'body' to allow content to go from side to side*/
+/* main.css */
+:root {
+  --primary-color: #FFB347;
+  --text-color: #333333;
+  --background-color: #FFFFFF;
+  --accent-color: #4A90E2;
+}
+
 body {
-  background-color: #FFB347;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
   min-height: 100vh;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.content-bubble {
+  background-color: var(--background-color);
+  border-radius: 25px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title-container {
+  display: inline-block;
+  background-color: var(--background-color);
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+.site-title {
+  color: var(--primary-color);
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: var(--background-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
 }
 
 main {
-  flex: 1;
-  width: 60%;
+  flex-grow: 1;
 }
 
-@media only screen and (max-width: 768px) {
-  main {
-    flex: 1;
-    width: 95%;
-  }
-}
-/*Styling for welcome button*/
-.welcomeButton {
-  transition-duration: 0.4s;
-  background-color: #ff9729;
-  border: none;
-  text-decoration-color: black;
-  text-align: center;
-  border-radius: 20px;
-  width: 100px;
-  height: 50px;
-  display: inline-block;
+h1, h2, h3 {
+  color: var(--primary-color);
 }
 
-.welcomeButton:hover {
-  background-color: #FFC471;
-}
-
-/*The Styling for the banner, denoted with class=banner*/
-body .banner {
-  font-family: Arial;
-  font-size: 40;
-  background-color: #FFB347;
-  text-align: center;
-  padding: 15px;
-  border: 0;
-  margin: 0;
-}
-
-/*Styling for the Top Nav Bar*/
-.topnav {
-  background-color: #FFB347;
-  width: 100%;
-}
-
-.topnav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #FFB347;
-  top: 0;
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 768px) {
-  .topnav ul {
-    flex-wrap: wrap;
-    justify-content: center; /* Remove any horizontal justification */
-  }
-}
-.topnav li {
-  /*float: left;*/
-  border-radius: 20px;
-}
-
-.topnav .active {
-  background-color: #FFC471;
-}
-
-.topnav li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
+a {
+  color: var(--accent-color);
   text-decoration: none;
 }
 
-.topnav .menu li a:hover {
-  background-color: #FFC471;
-  border-radius: 20px;
-}
-
-/*Styling for Columns*/
-/*Styling for main column*/
-.column {
-  width: 65%;
-  float: left;
-}
-
-.column-full {
-  float: left;
-}
-
-.column-right {
-  width: 35%;
-  float: left;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .column, .column-right {
-    width: 100%;
-    padding: 0;
-  }
-}
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-/*Styling for section boxes*/
-.card {
-  background-color: #FFC471;
-  padding: 10px;
-  margin: 20px;
-  border-radius: 30px;
-}
-
-.card h2 {
+a:hover {
   text-decoration: underline;
 }
 
-.card p {
-  text-align: left;
+.project {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
 }
 
-/*Styling for welcome page card*/
-.welcomeCard {
-  background-color: #FFC471;
-  padding: 10px;
-  margin: 20px;
-  border-radius: 30px;
-  align-items: center;
+.project:last-child {
+  border-bottom: none;
 }
 
-.welcomeCard h2 {
-  text-decoration: underline;
+.project-extract {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+footer {
   text-align: center;
-}
-
-.welcomeCard p {
-  text-align: center;
-}
-
-.bigCard {
-  background-color: #FFC471;
-  border: 3px solid #FFC471;
-  padding: 10px;
-  margin: 20px;
-  border-radius: 30px;
-  align-items: center;
-}
-
-.bigCard h2 {
-  text-decoration: underline;
-  text-align: left;
-}
-
-.bigCard p {
-  text-align: left;
-}
-
-/*DEscription of the grid layout for the Work Showcase*/
-.showcaseGrid {
-  display: grid;
-  grid-template-columns: 1fr 500px 1fr;
-  grid-template-rows: 400px;
-  align-items: stretch;
-  place-items: center;
-}
-
-.showcaseGrid .date {
-  text-align: right;
-}
-
-/*Styling for Shower Thoughts page*/
-.showerGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 400px;
-  align-items: stretch;
-  place-items: center;
-}
-
-.footer {
+  padding: 1rem;
   margin-top: auto;
-  text-align: center;
-  width: 100%;
-  background-color: #ff9729;
+  color: var(--background-color);
 }
 
-.two-column-list {
-  width: 100%; /* Set the width of the container */
+/* Responsive design */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+  .page-container {
+    padding: 1rem;
+  }
+  .content-bubble {
+    padding: 1rem;
+  }
+}
+/* Update these styles in your existing CSS file */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 0rem;
 }
 
-.two-column-list li {
-  float: left;
-  width: 50%; /* Set the width of each list item */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 2px solid var(--primary-color);
+  border-radius: 27px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.three-column-list {
-  width: 100%; /* Set the width of the container */
+.project-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
 }
 
-.three-column-list li {
-  float: left;
-  width: 33.33%; /* Set the width of each list item */
+.project-card .content-bubble {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0rem;
 }
 
-.four-column-list {
-  width: 100%; /* Set the width of the container */
+.project-card h4 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 1.2rem;
 }
 
-.four-column-list li {
-  float: left;
-  width: 25%; /* Set the width of each list item */
+.project-extract {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.project-card .technologies {
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.project-card a {
+  align-self: flex-start;
+  margin-top: auto;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: var(--accent-color);
+}
+
+h2 {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  color: var(--accent-color);
+  margin-top: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

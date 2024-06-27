@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/projects/ai_coursework.html</loc>
-<lastmod>2024-06-23T18:51:10+01:00</lastmod>
+<loc>http://localhost:4000/personal_projects/example.html</loc>
+<lastmod>2024-06-27T12:54:33+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/projects/grow_explore.html</loc>
-<lastmod>2024-06-23T18:51:10+01:00</lastmod>
+<loc>http://localhost:4000/personal_projects/portfolio_website.html</loc>
+<lastmod>2024-06-27T12:54:33+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/projects/huffman_coursework.html</loc>
-<lastmod>2024-06-23T18:51:10+01:00</lastmod>
+<loc>http://localhost:4000/university_projects/ai_coursework.html</loc>
+<lastmod>2024-06-27T12:54:33+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/projects/portfolio_website.html</loc>
-<lastmod>2024-06-23T18:51:10+01:00</lastmod>
+<loc>http://localhost:4000/university_projects/grow_explore.html</loc>
+<lastmod>2024-06-27T12:54:33+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/contact_me.html</loc>
+<loc>http://localhost:4000/university_projects/huffman_coursework.html</loc>
+<lastmod>2024-06-27T12:54:33+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/contact.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
