@@ -37,5 +37,3 @@ This is the project excerpt. It should be a brief, attention-grabbing summary of
 [Share insights or skills you gained from this project]
 
 [View the code repository](http://github.com)
-
-[Back to Projects](/projects)

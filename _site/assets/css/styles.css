@@ -132,7 +132,7 @@ footer {
 /* Update these styles in your existing CSS file */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-bottom: 0rem;
 }
@@ -145,6 +145,12 @@ footer {
   border-radius: 27px;
   overflow: hidden;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+  grid-column: auto/span 1; /* Default to single column */
+}
+
+/* Make single items span full width */
+.project-card:only-child {
+  grid-column: 1/-1; /* Span from first to last column */
 }
 
 .project-card:hover {
@@ -201,6 +207,17 @@ h2 {
 h3 {
   color: var(--accent-color);
   margin-top: 1.5rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-card,
+  .project-card:only-child {
+    grid-column: 1; /* Reset for single column layout */
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -43,7 +43,7 @@ title: Projects
         <div class="project-card">
           <div class="content-bubble">
             <h4>{{ project.title }}</h4>
-            <p class="project-extract">{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
+            <p class="project-extract">{{ project.blurb }}</p>
             <p class="technologies"><strong>Technologies:</strong> {{ project.technologies | join: ", " }}</p>
             <a href="{{ project.url }}">Read more</a>
           </div>

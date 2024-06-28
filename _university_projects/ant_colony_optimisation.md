@@ -1,11 +1,10 @@
 ---
 layout: "project"
-title: "Huffman Compression Coursework"
-year: 2021
-month: "August"
-technologies: [Python, Data Structures and Algorithms]
-blurb: "A Coursework completed for the module ECM1414 - Data Structures and Algorithms. The task was to
-research, implement and create a writeup for a data compression algorithm of our choosing"
+title: "Ant Colony Optimisation"
+year: 2024
+technologies: [Python]
+blurb: "A Coursework completed for the module ECMxxxx - Social and Professional Issues of the Information Age. The task was to
+research and create a report about the topic of predictive policing"
 ---          
 
 ## Overview
