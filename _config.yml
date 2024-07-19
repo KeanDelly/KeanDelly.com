@@ -1,5 +1,9 @@
+title: "Dean Kelly"
+
 collections:
-  projects:
+  university_projects:
+    output: true
+  personal_projects:
     output: true
       
 plugins:
