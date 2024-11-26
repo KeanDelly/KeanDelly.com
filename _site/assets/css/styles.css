@@ -27,6 +27,8 @@ body {
   background-color: var(--background-color);
   border-radius: 25px;
   padding: 2rem;
+  margin-right: 12rem;
+  margin-left: 12rem;
   margin-bottom: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -164,6 +166,8 @@ footer {
   display: flex;
   flex-direction: column;
   margin-bottom: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
 }
 
 .project-card h4 {
