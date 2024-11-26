@@ -8,7 +8,7 @@ research and create a report about the topic of predictive policing"
 ---          
 
 ## Overview
-
+This Coursework was completed for the module Algorithms that changed the world. We were to select a historically significant algorithm, plan the program flowcharts and pseudocode, implement the algorithm and create a writeup summarising the algorithm and the impact it has had
 ## Key Features
 
 - [Feature 1]
