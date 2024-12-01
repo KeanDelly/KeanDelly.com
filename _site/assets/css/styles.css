@@ -116,7 +116,7 @@ footer {
 }
 
 /* Responsive design */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     align-items: center;
@@ -129,6 +129,29 @@ footer {
   }
   .content-bubble {
     padding: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+}
+@media (max-width: 1400px) {
+  .content-bubble {
+    padding: 1rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+  }
+}
+@media (max-width: 1200px) {
+  .content-bubble {
+    padding: 1rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
+}
+@media (max-width: 1000px) {
+  .content-bubble {
+    padding: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
 }
 /* Update these styles in your existing CSS file */
