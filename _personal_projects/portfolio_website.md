@@ -8,19 +8,20 @@ blurb: "This very website, powered by Jekyll and Github Pages it serves as a por
 
 ## Background
 
-This Portfolio website is quite a long time in the making. It was started in 2022 whilst I was looking for an Industrial PLacement experiance, with the goal of impressing employers with a portfolio of my work. After doing an initial landing page and moving onto the actual projects section, I soon realised that it was serving no purpose other then being a more awkward way to link to Github Repositories. 
+This Portfolio site is quite a long time in the making. It was started in 2022 with the primary purpose of showcasing my work to prospective employers. With Web Development not being my area of interest, the initial landing page and projects section served no greater purpose then being a more awkward way to link to Github Repositories. 
 
-Now in 2024, having graduated university, I wanted to revisit the project. I wanted to create a professional looking site that showcased my work. This time a proper development approach would be taken, starting with the design and layout of the website, with the content of the site to follow. By doing so, it would also allow me to reflect on the projects created at university and during my spare time, thinking about the skills I've learned. 
+Now in 2024, having graduated university, I wanted to revisit the project. To create a professional looking site, showcasing my work in a more personal way than just a github profile. This time a proper development approach would be taken, starting with the design and layout of the website, with the content of the site to follow. By doing so, I could reflect on both university and personal projects, the skills they developed and the lessons learned. 
 
 ## Development Overview
 
-The development of the site has mostly followed a waterfall like approach. First a pen and paper sketch of the page alyouts was made, and colors selected for the site. I then looked into the technologies that could make the development of the site much easier. Things such as hosting providers and site creation tools. 
+Initially I wanted to follow a waterfall like approach to the sites creation, this fell by the wayside for a more Agile approach. The justification for this being simple, revisiting older projects can take a surprising amount of time. For each project, the code, reports, comments from lecturers, etc all need looking through and framing in the context of the time. Easier for final year projects. Harder for those in my first year of University. The hybrid approach being as follows: the stages of design through to implementation would be waterfall. The implementation onwards would be more iterative. With Projects added as time permitting. 
 
-Being a free platform that i counsider quite trustworthy, I decided to use Github Pages as a hosting platform. This indirectly influened the selection of site creation tool. Remembering the pains of managing large numbers of links across even a small number of pages, I wanted to find a tool that made site management easier, but also allow the creation of the site in pure code form. Being supported by Github Pages, Jekyll seemed ideal as it fit all the above criteria. 
+To begin, a pen and paper sketch of the page layouts were drawn, and colors selected for the site. Then potential development tools were investigated that would make the development of the site much easier.  
+Being a free, and quite trustworthy platform, I decided to use Github Pages as a hosting platform. This indirectly influened the selection of site creation tool. Managing the links betweeen even a small number of pages can quickly become a big task. For this reason the Static Site Generator Jekyll seemed an ideal choice. It allowed the generation of links and page layouts to be geenrated programatically, with the added bonus of being supported by Github Pages.  
 
-The base of the site was created, powered by Jekyll. A default template for all pages was made, alongside the creation of a collection for projects, to allow the auto-generation of the Projects pages. The design of the page did vary slightly from its origninal drawings, but mostly small aesthetic changes, such as a white instead of clementine background. 
+The base of the site was created, a default template for all pages, alongside the creation of a collection for projects. This allowed the auto-generation of the Projects page. At this stage the design of the page did vary from its origninal drawings, but for small aesthetic changes, such as a white instead of clementine background. 
 
-Once I was happy with the layout, aswell as getting a bit bored with graphic design. I began to fill out the content. The Projects collection came in really handy, since it meant the majority of pages could be written in simple markdown, and the pages automatically generated. 
+Once I was happy with the layout, aswell as getting a bit bored with graphic design. I began to fill out the content. Which is where I am now... filling out the projects one by one. The Projects collection is coming in handy, as each project page can be written in simple markdown, and generated automatically. 
 
 ## Technologies Used
 
@@ -34,9 +35,9 @@ Without too much detail, the technologies used for this project are:
 * RSS
 
 ## Lessons Learned
-The biggest lessons learned on this project were how to use Ruby, Ruby Gems and the importance of being able to debug command line errors. 
+I would argue no large lessons have been learned so far for this project, in terms of general development things have gone quite smoothly.However in terms of skills they have developed well. I have used Ruby, Ruby Gems and Github Pages for the first time. Hopefully quite successfully, only time will tell as the content of the site fills out. 
 
 
 ## Future Developments
 
-Having added the majority of previous work to the site, I am happy with the look and content of the site. As such I dont think there is a current need to develop the site further. This will allow me to work on new projects using the skills and abilities reflected upon in the sites creation. As such, updates will continue with the addition of new work, or ammendments to prior work.
+As previously stated, being happy with the look of the site, the main future developement is to fill out the content of previous projects.
